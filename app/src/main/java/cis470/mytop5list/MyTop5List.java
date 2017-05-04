@@ -3,11 +3,12 @@ package cis470.mytop5list;
 /*
  Ruudolph Libertini
  2500491
- Homework 1
- 2/17/2017
+ Homework 4
+ 5/3/2017
 */
 
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +26,9 @@ public class MyTop5List extends AppCompatActivity {
     int startIndex = 4;
     int endIndex = 0;
     int currentIndex = 4;
-    String[] descriptionArray = {"Tibetan Mastiff: ITs So FLUFFY", "Bernese Mountain Dog: A big fluffy dog", "African Lion Hunting Dog: Can literally keep a lion at bay", "Portuguese Water Dog: Fun and energetic, and they love to swim", "Australian Shepherd: A little ball of energy, take it to the dog park"};
+    //Resources res = getResources();
+    String[] descriptionArray;// = getResources().getStringArray(R.array.dogs);
+//    {"Tibetan Mastiff: ITs So FLUFFY", "Bernese Mountain Dog: A big fluffy dog", "African Lion Hunting Dog: Can literally keep a lion at bay", "Portuguese Water Dog: Fun and energetic, and they love to swim", "Australian Shepherd: A little ball of energy, take it to the dog park"};
     int number = currentIndex + 1;
 
 
@@ -35,6 +38,7 @@ public class MyTop5List extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_top5_list);
+        descriptionArray = getResources().getStringArray(R.array.dogs);
         Dogs = (ImageView) findViewById(R.id.dogPics);
         Number= (TextView) findViewById(R.id.image_number);
         Description = (TextView) findViewById(R.id.description);
@@ -66,7 +70,7 @@ public class MyTop5List extends AppCompatActivity {
     public void setCurrentPic(){
 
         Dogs.setImageResource(picArray[currentIndex]);
-        Number.setText("Number " + number);
+        Number.setText(getResources().getString(R.string.number) + " " +number);
         Description.setText(descriptionArray[currentIndex]);
 
     }

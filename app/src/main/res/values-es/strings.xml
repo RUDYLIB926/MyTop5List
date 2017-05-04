@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mis 5 mejores listas</string>
+    <string name="next" >Siguiente</string>
+    <string name="previous">Anterior</string>
+    <string name="number">Número</string>
+    <string name="rudy_s_top_5_dogs">Rudy\'s 5 perros favoritos:</string>
+    <string-array name="dogs">
+        <item>Mastín Tibetano: Es tan FLUFFY</item>
+        <item>Bernese Mountain Dog: Un perro mullido grande</item>
+        <item>Perro De Caza De León Africano: Puede literalmente mantener a un león a raya</item>
+        <item>Perro De Agua Portugués: Divertido y enérgico, y les encanta nadar</item>
+        <item>Australian Shepherd: Una pequeña bola de energía, llévela al parque de perros</item>
+    </string-array>
+</resources>

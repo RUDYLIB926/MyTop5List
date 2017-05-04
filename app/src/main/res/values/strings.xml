@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">MyTop5List</string>
+    <string name="app_name">My Top 5 List</string>
+    <string name="next" >Next</string>
+    <string name="previous">Previous</string>
+    <string name="number">Number</string>
+    <string name="rudy_s_top_5_dogs">Rudy\'s Top 5 Dogs:</string>
+    <string-array name="dogs">
+        <item>Tibetan Mastiff: ITs So FLUFFY</item>
+        <item>Bernese Mountain Dog: A big fluffy dog</item>
+        <item>African Lion Hunting Dog: Can literally keep a lion at bay</item>
+        <item>Portuguese Water Dog: Fun and energetic, and they love to swim</item>
+        <item>Australian Shepherd: A little ball of energy, take it to the dog park</item>
+    </string-array>
 </resources>

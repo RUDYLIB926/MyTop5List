@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rudy's Top 5 Dogs:"
+        android:text="@string/rudy_s_top_5_dogs"
         android:gravity="center"
         android:textSize="25sp"
         android:textColor="@color/colorPrimaryDark"
@@ -62,9 +62,10 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Previous"
+            android:text="@string/previous"
             android:id="@+id/previousbutton"
-            android:onClick="previousPic" android:textSize="20sp"
+            android:onClick="previousPic"
+            android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
             android:background="@color/colorAccent"
@@ -72,7 +73,7 @@
             android:layout_marginRight="10dp" />
 
         <Button
-            android:text="Next"
+            android:text="@string/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/nextbutton"
